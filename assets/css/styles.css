@@ -179,6 +179,23 @@ button {
 	height: 4rem;
 }
 
+
+/* Used this css to change the default action of dropdown menu from click to hover */
+body {
+    padding-top: 100px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #F8F9FA;
+}
+/* Removed the dropdown button with this css */
+.dropdown-toggle::after {
+    content: none;
+}
+.navbar {
+    padding-top: 28px;
+}
+
 /* HERO SECTION ========================================= */
 .home {
 	height: 100vh;
@@ -491,7 +508,7 @@ button {
 }
 
 /* FOOTER SECTION ========================================= */
-.footer-container {
+/* .footer-container {
 	margin-top: 3rem;
 	border-top: 2px solid #181a1b;
 	padding-top: 2rem;
@@ -522,7 +539,81 @@ button {
 .terms:hover,
 .country:hover {
 	color: var(--white-clr);
-}
+} */
+
+
+/* new footer from Natnael */
+
+
+/* Footer Styling */
+ 
+.footer-wrapper {
+    background-color: #F5F5F7;
+    color: #747475;
+    font-size: 0.7em;
+  }
+.footer-wrapper ul {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-inline-start: 0px;
+  }
+.footer-wrapper ul a {
+    color: #515154;
+    text-decoration: none;
+  }
+.my-apple-wrapper {
+    padding-bottom: 15px;
+    margin-top: 10px;
+  }
+.copyright {
+    margin-top: 15px;
+  }
+.footer-country {
+    margin-top: 8px;
+  }
+.flag-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+.footer-country-name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+.footer-links-terms ul {
+    display: flex;
+  }
+.footer-links-terms ul li {
+    padding: 0 10px;
+    border-right: 1px solid #d2d2d7;
+  }
+.footer-links-terms ul li:first-child {
+    padding-left: 0;
+  }
+.footer-links-terms ul li:last-child {
+    border-right: 0;
+  }
+ 
+.footer-links-wrapper h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d1d1f;
+  }
+.footer-wrapper ul li {
+    padding: 4px 0;
+  }
+.upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 17px 0 10px;
+    margin-bottom: 20px;
+  }
+.upper-text-container a {
+    color: #515154;
+  }
+
+
+
+
 
 /* SCREEN SIZES ========================================= */
 /* For small devices */
@@ -803,11 +894,11 @@ button {
 		padding-right: 300px;
 	}
 
-	.footer-container {
+	/* .footer-container {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-	}
+	} */
 }
 
 /* For larger devices */
@@ -887,9 +978,9 @@ button {
 		font-size: 4.5rem;
 	}
 
-	.footer-left-col {
+	/* .footer-left-col {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-	}
+	} */
 }
